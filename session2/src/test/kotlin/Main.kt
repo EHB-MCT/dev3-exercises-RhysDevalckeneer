@@ -2,6 +2,9 @@ fun main() {
     intro()
 }
 
+// value.contains()
+// can be used
+
 // val correctAnswers = mutableListOf("one", "two")
 // val givenAnswers = mutableListOf("one", "two", "three", "four")
 
