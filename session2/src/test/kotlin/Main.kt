@@ -30,13 +30,6 @@ fun challengeOne() {
     }
 }
 
-fun rolldice() {
-    val randomNumber = (1..6).random()
-
-    println(randomNumber)
-}
-
-
 fun challengeTwo() {
     println("Pick a number between 1 and 6. If you guess correctly, you may live");
 
@@ -63,7 +56,15 @@ fun challengeFive() {
 
 }
 
+// roll dice function
+fun rollDice(sides: Int): Int {
+    return (Math.random() * sides + 1).toInt()
+}
+
+fun success() {
+    println("Good job! You won the game!")
+}
+
 fun gameOver() {
-    val endGameText =  "\n Beam me up, Scotty! \n"
-    println(endGameText)
+    println("Sorry, you lost! But you can give it another")
 }
